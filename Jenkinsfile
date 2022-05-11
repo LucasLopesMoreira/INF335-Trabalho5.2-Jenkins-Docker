@@ -4,14 +4,14 @@ pipeline {
     stage("build") {
       steps {
         sh """
-          docker build -t OlaUnicamp .
+          docker build -t olaUnicamp .
         """
       }
     }
     stage("run") {
       steps {
         sh """
-          docker run --rm OlaUnicamp
+          docker run --rm olaUnicamp
         """
       }
     }
