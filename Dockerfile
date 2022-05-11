@@ -1,4 +1,4 @@
 FROM alpine:latest
-ADD olaUnicamp.java olaUnicamp.java
+ADD olaunicamp.java olaunicamp.java
 RUN apk --update add openjdk11-jre
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "olaUnicamp"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "olaunicamp"]
