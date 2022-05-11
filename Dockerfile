@@ -1,5 +1,4 @@
-FROM openjdk:11
-COPY olaunicamp.java
-WORKDIR olaunicamp.java
-RUN javac olaunicamp.java
-CMD ["java", "olaunicamp"]
+FROM openjdk:11-alpine
+COPY ./inf335-trabalho5/src/br/unicamp/ic/inf335/olaUnicamp.java /
+RUN javac Main.class
+CMD ["java", "olaUnicamp"]
