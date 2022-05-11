@@ -1,4 +1,4 @@
 FROM openjdk:11
 COPY olaUnicamp.java
 RUN javac olaUnicamp.java
-CMD ["java", "OlaUnicamp.java"]
+CMD ["java", "olaUnicamp.java"]
