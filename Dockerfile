@@ -1,4 +1,5 @@
 FROM openjdk:11
-COPY . /inf335-trabalho5/bin/br/unicamp/ic/inf335/olaUnicamp.class
-RUN javac olaUnicamp.class
-CMD ["java", "-jar", "olaUnicamp.class"]
+WORKDIR . INF335-Trabalho5.2-Jenkins-Docker/inf335-trabalho5/src/br/unicamp/ic/inf335/
+COPY . INF335-Trabalho5.2-Jenkins-Docker/inf335-trabalho5/src/br/unicamp/ic/inf335/olaUnicamp.java
+RUN javac olaUnicamp.java
+CMD ["java", "olaUnicamp.class"]
