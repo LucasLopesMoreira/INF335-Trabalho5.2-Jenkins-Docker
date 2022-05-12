@@ -1,4 +1,4 @@
-FROM openjdk:11-alpine
+FROM openjdk:11
 COPY . /inf335-trabalho5/src/br/unicamp/ic/inf335
 WORKDIR . /inf335-trabalho5/src/br/unicamp/ic/inf335
 RUN javac olaUnicamp.java
