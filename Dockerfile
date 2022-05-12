@@ -3,3 +3,4 @@ WORKDIR . INF335-Trabalho5.2-Jenkins-Docker/inf335-trabalho5/src/br/unicamp/ic/i
 COPY . olaUnicamp.java
 RUN ls -la
 CMD ["javac", "olaUnicamp.java"]
+RUN ls -la
