@@ -4,7 +4,7 @@ pipeline {
     stage("build") {
       steps {
         sh """
-          docker build -f Dockerfile
+          dockerImage = docker.build olaunicamp
         """
       }
     }
