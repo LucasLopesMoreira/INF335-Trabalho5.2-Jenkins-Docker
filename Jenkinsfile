@@ -11,7 +11,7 @@ pipeline {
     stage("run") {
       steps {
         sh """
-          docker run olaUnicamp
+          docker run -rm olaunicamp
         """
       }
     }
